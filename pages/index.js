@@ -28,10 +28,10 @@ export default function Home() {
 
         <h2 className="section-header">Experience</h2>
         <ul>
-          <li><span>Full Stack Web Intern</span> - Formlabs</li>
-          <li><span>Technical Product Manager</span> - Cornell DTI</li>
-          <li><span>Flutter Developer</span> - Cornell DTI</li>
-          <li><span>Full Stack Web Intern</span> - StartupTree</li>
+          <li><span className="underline-link">Full Stack Web Intern</span> - Formlabs</li>
+          <li><span className="underline-link">Technical Product Manager</span> - Cornell DTI</li>
+          <li><span className="underline-link">Flutter Developer</span> - Cornell DTI</li>
+          <li><span className="underline-link">Full Stack Web Intern</span> - StartupTree</li>
         </ul>
 
         <h2 className="section-header">Coursework</h2>
@@ -66,7 +66,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -148,8 +148,9 @@ export default function Home() {
 
         .contact {
           padding: 0.85em 1.15em;
-          border: 1px solid #662E9B;
           border-radius: 3px;
+          background: #662E9B;
+          color: #FFF;
         }
 
         .section-header {
@@ -160,6 +161,10 @@ export default function Home() {
           list-style: none;
           padding: 0;
           margin: 0;
+        }
+
+        li {
+          margin: 0rem 0rem 1rem;
         }
 
         code {
