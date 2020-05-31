@@ -16,12 +16,12 @@ export default function Card({ image, employer, role, description }) {
       </div>
 
       <style jsx>{`
-      .wrapper {
-        padding: 3rem 2rem;
+        .wrapper {
+          padding: 3rem 2rem;
         }
 
         .card {
-        background: white;
+          background: white;
           width: 18rem;
           display: inline-block;
           margin: auto;
@@ -37,7 +37,7 @@ export default function Card({ image, employer, role, description }) {
         }
 
         .card__image {
-        position: relative;
+          position: relative;
           height: 14.375rem;
           margin-bottom: 2rem;
           border-top-left-radius: 19px;
@@ -46,25 +46,26 @@ export default function Card({ image, employer, role, description }) {
         }
 
         .card__image img {
-        position: absolute;
-          top: -4.15rem;
-          left: -4.0rem;
+          position: absolute;
+          width: 16rem;
+          top: -2.15rem;
+          left: 6.0rem;
         }
 
         .card__employer {
-        text - transform: uppercase;
+          text-transform: uppercase;
           font-weight: 700;
           margin-bottom: 0.25rem;
         }
 
         .card__role {
-        font - weight: 900;
+          font - weight: 900;
           font-size: 1.25rem;
           margin-bottom: 0.3rem;
         }
 
         .card__description {
-        color: #9E9E9E;
+          color: #9E9E9E;
           padding: 1.25rem;
           margin-bottom: 0.6rem;
         }

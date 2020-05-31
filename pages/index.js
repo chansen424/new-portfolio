@@ -27,17 +27,13 @@ export default function Home() {
           <a className="contact" href="mailto:cph64@cornell.edu">Contact Me</a>
         </div>
 
-        <Card image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" employer="Formlabs" role="Full Stack Web Developer"
+        <Card image="form3b.png" employer="Formlabs" role="Full Stack Web Developer"
           description="This is the description that I put in place to describe the work that I did
             at Formlabs."/>
 
-        <Card image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" employer="Formlabs" role="Full Stack Web Developer"
+        <Card image="StartupTree.png" employer="StartupTree" role="Full Stack Web Developer"
           description="This is the description that I put in place to describe the work that I did
-            at Formlabs."/>
-
-        <Card image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" employer="Formlabs" role="Full Stack Web Developer"
-          description="This is the description that I put in place to describe the work that I did
-            at Formlabs."/>
+            at StartupTree."/>
 
         <h2 className="section-header">Experience</h2>
         <ul>
