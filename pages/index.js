@@ -4,48 +4,44 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Chris Who Codes</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className="intro">Hi, my name is</h1>
+
+        <h2 className="full-name">Chris Hansen.</h2>
+
+        <h3 className="tagline">Develop better software.</h3>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          I'm a CS student at Cornell University. I'm the Technical Product Manager
+          for <a href="https://cornelldti.org">Cornell Design & Tech Initiative's</a> campus-wide
+          paratransit solution, Carriage.
+          Currently interning at Formlabs.
         </p>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="contact-container">
+          <a className="contact" href="mailto:cph64@cornell.edu">Contact Me</a>
         </div>
+
+        <h2 className="section-header">Experience</h2>
+        <ul>
+          <li>Full Stack Web Intern - Formlabs</li>
+          <li>Technical Product Manager - Cornell DTI</li>
+          <li>Flutter Developer - Cornell DTI</li>
+          <li>Full Stack Web Intern - StartupTree</li>
+        </ul>
+
+        <h2 className="section-header">Coursework</h2>
+        <ul>
+          <li>CS 4670</li>
+          <li>CS 3410</li>
+          <li>CS 3110</li>
+          <li>CS 2800</li>
+          <li>CS 2110</li>
+        </ul>
       </main>
 
       <footer>
@@ -74,8 +70,6 @@ export default function Home() {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
         }
 
         footer {
@@ -98,12 +92,12 @@ export default function Home() {
         }
 
         a {
-          color: inherit;
+          color: #662E9B;
           text-decoration: none;
         }
 
         .title a {
-          color: #0070f3;
+          color: #662E9B;
           text-decoration: none;
         }
 
@@ -113,20 +107,47 @@ export default function Home() {
           text-decoration: underline;
         }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
+        .intro {
+          font-size: 1.5rem;
+          color: #662E9B;
         }
 
-        .title,
-        .description {
-          text-align: center;
+        .full-name {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 2.5rem;
+        }
+
+        .tagline {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 2.5rem;
+          color: grey;
         }
 
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+        }
+
+        .contact-container {
+          margin: 1rem 0rem;
+        }
+
+        .contact {
+          padding: 1.25rem 1.75rem;
+          border: 1px solid #662E9B;
+          border-radius: 3px;
+        }
+
+        .section-header {
+          font-size:1.5rem;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
         }
 
         code {
@@ -138,56 +159,10 @@ export default function Home() {
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
         .logo {
           height: 1em;
         }
 
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
       `}</style>
 
       <style jsx global>{`
