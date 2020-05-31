@@ -11,13 +11,13 @@ export default function Home() {
       <main>
         <h1 className="intro">Hi, my name is</h1>
 
-        <h2 className="full-name">Chris Hansen.</h2>
+        <h2 className="full-name">Christopher Hansen.</h2>
 
         <h3 className="tagline">Develop better software.</h3>
 
         <p className="description">
           I'm a CS student at Cornell University. I'm the Technical Product Manager
-          for <a href="https://cornelldti.org">Cornell Design & Tech Initiative's</a> campus-wide
+          for <a className="underline-link" href="https://cornelldti.org">Cornell Design & Tech Initiative's</a> campus-wide
           paratransit solution, Carriage.
           Currently interning at Formlabs.
         </p>
@@ -28,19 +28,19 @@ export default function Home() {
 
         <h2 className="section-header">Experience</h2>
         <ul>
-          <li>Full Stack Web Intern - Formlabs</li>
-          <li>Technical Product Manager - Cornell DTI</li>
-          <li>Flutter Developer - Cornell DTI</li>
-          <li>Full Stack Web Intern - StartupTree</li>
+          <li><span>Full Stack Web Intern</span> - Formlabs</li>
+          <li><span>Technical Product Manager</span> - Cornell DTI</li>
+          <li><span>Flutter Developer</span> - Cornell DTI</li>
+          <li><span>Full Stack Web Intern</span> - StartupTree</li>
         </ul>
 
         <h2 className="section-header">Coursework</h2>
         <ul>
-          <li>CS 4670</li>
-          <li>CS 3410</li>
-          <li>CS 3110</li>
-          <li>CS 2800</li>
-          <li>CS 2110</li>
+          <li><span>Intro to Computer Vision</span> - CS 4670</li>
+          <li><span>Systems Organization & Programming</span> - CS 3410</li>
+          <li><span>Functional Programming</span> - CS 3110</li>
+          <li><span>Discrete Structures</span> - CS 2800</li>
+          <li><span>Object Oriented Programming</span> - CS 2110</li>
         </ul>
       </main>
 
@@ -96,15 +96,27 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #662E9B;
-          text-decoration: none;
+        .underline-link {
+          position: relative;
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
+        .underline-link::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 0.125rem;
+          background: #662E9B;
+
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 250ms ease-in;
+        }
+
+        .underline-link:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
         }
 
         .intro {
@@ -127,7 +139,7 @@ export default function Home() {
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
         }
 
         .contact-container {
@@ -135,7 +147,7 @@ export default function Home() {
         }
 
         .contact {
-          padding: 1.25rem 1.75rem;
+          padding: 0.85em 1.15em;
           border: 1px solid #662E9B;
           border-radius: 3px;
         }
@@ -161,6 +173,10 @@ export default function Home() {
 
         .logo {
           height: 1em;
+        }
+
+        span {
+          color: #662E9B;
         }
 
       `}</style>
