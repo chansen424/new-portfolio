@@ -26,21 +26,40 @@ export default function Home() {
           <a className="contact" href="mailto:cph64@cornell.edu">Contact Me</a>
         </div>
 
+        <div className="wrapper">
+          <div className="card">
+            <div className="card__image">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png"></img>
+            </div>
+            <div className="card__employer">Formlabs</div>
+            <div className="card__role">
+              Full Stack Web Developer
+            </div>
+            <div className="card__description">
+              This is the description that I put in place to describe the work that I did
+              at Formlabs.
+            </div>
+            <div className="card__stats">
+
+            </div>
+          </div>
+        </div>
+
         <h2 className="section-header">Experience</h2>
         <ul>
-          <li><span className="underline-link">Full Stack Web Intern</span> - Formlabs</li>
-          <li><span className="underline-link">Technical Product Manager</span> - Cornell DTI</li>
-          <li><span className="underline-link">Flutter Developer</span> - Cornell DTI</li>
-          <li><span className="underline-link">Full Stack Web Intern</span> - StartupTree</li>
+          <li><a className="underline-link">Full Stack Web Intern</a> - Formlabs</li>
+          <li><a className="underline-link">Technical Product Manager</a> - Cornell DTI</li>
+          <li><a className="underline-link">Flutter Developer</a> - Cornell DTI</li>
+          <li><a className="underline-link">Full Stack Web Intern</a> - StartupTree</li>
         </ul>
 
         <h2 className="section-header">Coursework</h2>
         <ul>
-          <li><span>Intro to Computer Vision</span> - CS 4670</li>
-          <li><span>Systems Organization & Programming</span> - CS 3410</li>
-          <li><span>Functional Programming</span> - CS 3110</li>
-          <li><span>Discrete Structures</span> - CS 2800</li>
-          <li><span>Object Oriented Programming</span> - CS 2110</li>
+          <li><a className="underline-link">Intro to Computer Vision</a> - CS 4670</li>
+          <li><a className="underline-link">Systems Organization & Programming</a> - CS 3410</li>
+          <li><a className="underline-link">Functional Programming</a> - CS 3110</li>
+          <li><a className="underline-link">Discrete Structures</a> - CS 2800</li>
+          <li><a className="underline-link">Object Oriented Programming</a> - CS 2110</li>
         </ul>
       </main>
 
@@ -94,6 +113,7 @@ export default function Home() {
         a {
           color: #662E9B;
           text-decoration: none;
+          cursor: pointer;
         }
 
         .underline-link {
@@ -184,6 +204,59 @@ export default function Home() {
           color: #662E9B;
         }
 
+        .wrapper {
+          padding: 3rem 2rem;
+        }
+
+        .card {
+          background: white;
+          width: 18rem;
+          display: inline-block;
+          margin: auto;
+          border-radius: 19px;
+          position: relative;
+          text-align: center;
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+
+        .card__image {
+          position: relative;
+          height: 14.375rem;
+          margin-bottom: 2rem;
+          border-top-left-radius: 19px;
+          border-top-right-radius: 19px;
+          background: #662E9B;
+        }
+
+        .card__image img {
+          position: absolute;
+          top: -4.15rem;
+          left: -4.0rem;
+        }
+
+        .card__employer {
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: 0.25rem;
+        }
+
+        .card__role {
+          font-weight: 900;
+          font-size: 1.25rem;
+          margin-bottom: 0.3rem;
+        }
+
+        .card__description {
+          color: #9E9E9E;
+          padding: 1.25rem;
+          margin-bottom: 0.6rem;
+        }
+
       `}</style>
 
       <style jsx global>{`
@@ -194,6 +267,7 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+            background: #EEF2F7;
         }
 
         * {
