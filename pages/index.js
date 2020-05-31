@@ -31,6 +31,14 @@ export default function Home() {
           description="This is the description that I put in place to describe the work that I did
             at Formlabs."/>
 
+        <Card image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" employer="Formlabs" role="Full Stack Web Developer"
+          description="This is the description that I put in place to describe the work that I did
+            at Formlabs."/>
+
+        <Card image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" employer="Formlabs" role="Full Stack Web Developer"
+          description="This is the description that I put in place to describe the work that I did
+            at Formlabs."/>
+
         <h2 className="section-header">Experience</h2>
         <ul>
           <li><a className="underline-link">Full Stack Web Intern</a> - Formlabs</li>
