@@ -1,32 +1,34 @@
 import Head from 'next/head'
+import Intro from '../components/intro'
 import CardList from '../components/cardList'
 import Button from '../components/button'
+import UnderlinedLink from '../components/underlinedLink'
 
 export default function Home() {
   const experience = [
     {
       image: "form3b.png",
       employer: "Formlabs",
-      role: "Full Stack Web Developer Intern",
-      description: ""
+      role: "Full Stack Web Intern",
+      description: "Formlabs Stuff"
     },
     {
-      image: "form3b.png",
+      image: "carriage.png",
       employer: "Cornell DTI",
       role: "Technical Product Manager",
-      description: ""
+      description: "TPM Stuff"
     },
     {
-      image: "form3b.png",
+      image: "carriage.png",
       employer: "Cornell DTI",
       role: "Flutter Developer",
-      description: ""
+      description: "Flutter Stuff"
     },
     {
-      image: "form3b.png",
+      image: "startuptree.png",
       employer: "StartupTree",
-      role: "Full Stack Web Developer Intern",
-      description: ""
+      role: "Full Stack Web Intern",
+      description: "StartupTree Stuff"
     }
   ]
 
@@ -38,38 +40,19 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="intro">Hi, my name is</h1>
+        <Intro>Develop Better Software.</Intro>
 
-        <h2 className="full-name">Christopher Hansen.</h2>
-
-        <h3 className="tagline">Develop better software.</h3>
-
-        <p className="description">
-          I'm a CS student at Cornell University. I'm the Technical Product Manager
-          for <a className="underline-link" href="https://cornelldti.org">Cornell Design & Tech Initiative's</a> campus-wide
-          paratransit solution, Carriage.
-          Currently interning at Formlabs.
-        </p>
-
-        <Button href="mailto:cph64@cornell.edu" label="Contact Me" />
+        <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
 
         <CardList cards={experience} />
 
-        <h2 className="section-header">Experience</h2>
-        <ul>
-          <li><a className="underline-link">Full Stack Web Intern</a> - Formlabs</li>
-          <li><a className="underline-link">Technical Product Manager</a> - Cornell DTI</li>
-          <li><a className="underline-link">Flutter Developer</a> - Cornell DTI</li>
-          <li><a className="underline-link">Full Stack Web Intern</a> - StartupTree</li>
-        </ul>
-
         <h2 className="section-header">Coursework</h2>
         <ul>
-          <li><a className="underline-link">Intro to Computer Vision</a> - CS 4670</li>
-          <li><a className="underline-link">Systems Organization & Programming</a> - CS 3410</li>
-          <li><a className="underline-link">Functional Programming</a> - CS 3110</li>
-          <li><a className="underline-link">Discrete Structures</a> - CS 2800</li>
-          <li><a className="underline-link">Object Oriented Programming</a> - CS 2110</li>
+          <li><UnderlinedLink>Intro to Computer Vision</UnderlinedLink> - CS 4670</li>
+          <li><UnderlinedLink>Systems Organization & Programming</UnderlinedLink> - CS 3410</li>
+          <li><UnderlinedLink>Functional Programming</UnderlinedLink> - CS 3110</li>
+          <li><UnderlinedLink>Discrete Structures</UnderlinedLink> - CS 2800</li>
+          <li><UnderlinedLink>Object Oriented Programming</UnderlinedLink> - CS 2110</li>
         </ul>
       </main>
 
@@ -89,56 +72,7 @@ export default function Home() {
           display: flex;
           flex-direction: column;
         }
-
-        .underline-link {
-          color: #662E9B;
-          position: relative;
-          cursor: pointer;
-          text-decoration: none;
-        }
-
-        .underline-link::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 0.125rem;
-          background: #662E9B;
-
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 250ms ease-in;
-        }
-
-        .underline-link:hover::after {
-          transform: scaleX(1);
-          transform-origin: left;
-        }
-
-        .intro {
-          font-size: 1.5rem;
-          color: #662E9B;
-        }
-
-        .full-name {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 2.5rem;
-        }
-
-        .tagline {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 2.5rem;
-          color: grey;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.25rem;
-        }
-
+        
         .section-header {
           font-size:1.5rem;
         }
