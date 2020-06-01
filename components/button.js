@@ -1,8 +1,8 @@
-export default function Button({ href, label }) {
+export default function Button({ children, href }) {
   return (
     <>
       <div className="contact-container">
-        <a className="contact" href={href}>{label}</a>
+        <a className="contact" href={href}>{children}</a>
       </div>
 
       <style jsx>{
