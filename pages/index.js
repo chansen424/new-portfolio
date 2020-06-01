@@ -1,7 +1,35 @@
 import Head from 'next/head'
-import Card from '../components/card'
+import CardList from '../components/cardList'
+import Button from '../components/button'
 
 export default function Home() {
+  const experience = [
+    {
+      image: "form3b.png",
+      employer: "Formlabs",
+      role: "Full Stack Web Developer Intern",
+      description: ""
+    },
+    {
+      image: "form3b.png",
+      employer: "Cornell DTI",
+      role: "Technical Product Manager",
+      description: ""
+    },
+    {
+      image: "form3b.png",
+      employer: "Cornell DTI",
+      role: "Flutter Developer",
+      description: ""
+    },
+    {
+      image: "form3b.png",
+      employer: "StartupTree",
+      role: "Full Stack Web Developer Intern",
+      description: ""
+    }
+  ]
+
   return (
     <div className="container">
       <Head>
@@ -23,17 +51,9 @@ export default function Home() {
           Currently interning at Formlabs.
         </p>
 
-        <div className="contact-container">
-          <a className="contact" href="mailto:cph64@cornell.edu">Contact Me</a>
-        </div>
+        <Button href="mailto:cph64@cornell.edu" label="Contact Me" />
 
-        <Card image="form3b.png" employer="Formlabs" role="Full Stack Web Developer"
-          description="This is the description that I put in place to describe the work that I did
-            at Formlabs."/>
-
-        <Card image="StartupTree.png" employer="StartupTree" role="Full Stack Web Developer"
-          description="This is the description that I put in place to describe the work that I did
-            at StartupTree."/>
+        <CardList cards={experience} />
 
         <h2 className="section-header">Experience</h2>
         <ul>
@@ -53,17 +73,6 @@ export default function Home() {
         </ul>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
       <style jsx>{`
         .container {
           min-height: 100vh;
@@ -81,32 +90,11 @@ export default function Home() {
           flex-direction: column;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: #662E9B;
-          cursor: pointer;
-        }
-
         .underline-link {
+          color: #662E9B;
           position: relative;
+          cursor: pointer;
+          text-decoration: none;
         }
 
         .underline-link::after {
@@ -149,17 +137,6 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.25rem;
-        }
-
-        .contact-container {
-          margin: 1rem 0rem;
-        }
-
-        .contact {
-          padding: 0.85em 1.15em;
-          border-radius: 3px;
-          background: #662E9B;
-          color: #FFF;
         }
 
         .section-header {
