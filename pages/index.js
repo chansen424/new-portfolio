@@ -102,7 +102,6 @@ export default function Home() {
 
         a {
           color: #662E9B;
-          text-decoration: none;
           cursor: pointer;
         }
 
