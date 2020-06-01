@@ -13,7 +13,7 @@ export default function Intro({ children }) {
         I'm a CS student at Cornell University. I'm the Technical Product Manager
         for <UnderlinedLink href="https://cornelldti.org">Cornell Design & Tech Initiative's</UnderlinedLink> campus-wide
         paratransit solution, Carriage.
-        Currently interning at Formlabs.
+        Currently interning at <UnderlinedLink href="https://formlabs.com">Formlabs</UnderlinedLink>.
       </p>
 
       <style jsx>{
