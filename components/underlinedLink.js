@@ -1,7 +1,7 @@
 export default function UnderlinedLink({ children, href }) {
   return (
     <>
-      <a className="underlined-link" href={href}>{children}</a>
+      <a className="underlined-link" href={href} target="_blank">{children}</a>
 
       <style jsx>{
         `.underlined-link {
