@@ -3,6 +3,7 @@ import Intro from '../components/intro'
 import CardList from '../components/cardList'
 import Button from '../components/button'
 import UnderlinedLink from '../components/underlinedLink'
+import CenterLeft from '../components/centerLeft'
 
 export default function Home() {
   const experience = [
@@ -40,20 +41,27 @@ export default function Home() {
       </Head>
 
       <main>
-        <Intro>Develop Better Software.</Intro>
 
-        <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
+        <CenterLeft>
+          <Intro>Develop Better Software.</Intro>
+        </CenterLeft>
+
+        <CenterLeft>
+          <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
+        </CenterLeft>
 
         <CardList cards={experience} />
 
-        <h2 className="section-header">Coursework</h2>
-        <ul>
-          <li><UnderlinedLink>Intro to Computer Vision</UnderlinedLink> - CS 4670</li>
-          <li><UnderlinedLink>Systems Organization & Programming</UnderlinedLink> - CS 3410</li>
-          <li><UnderlinedLink>Functional Programming</UnderlinedLink> - CS 3110</li>
-          <li><UnderlinedLink>Discrete Structures</UnderlinedLink> - CS 2800</li>
-          <li><UnderlinedLink>Object Oriented Programming</UnderlinedLink> - CS 2110</li>
-        </ul>
+        <CenterLeft>
+          <h2 className="section-header">Coursework</h2>
+          <ul>
+            <li><UnderlinedLink>Intro to Computer Vision</UnderlinedLink> - CS 4670</li>
+            <li><UnderlinedLink>Systems Organization & Programming</UnderlinedLink> - CS 3410</li>
+            <li><UnderlinedLink>Functional Programming</UnderlinedLink> - CS 3110</li>
+            <li><UnderlinedLink>Discrete Structures</UnderlinedLink> - CS 2800</li>
+            <li><UnderlinedLink>Object Oriented Programming</UnderlinedLink> - CS 2110</li>
+          </ul>
+        </CenterLeft>
       </main>
 
       <style jsx>{`
@@ -67,10 +75,10 @@ export default function Home() {
         }
 
         main {
-          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
+          text-align: center;
         }
         
         .section-header {
@@ -94,14 +102,6 @@ export default function Home() {
           font-size: 1.1rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        span {
-          color: #662E9B;
         }
       `}</style>
 
