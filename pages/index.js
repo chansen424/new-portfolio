@@ -11,25 +11,25 @@ export default function Home() {
       image: "form3b.png",
       employer: "Formlabs",
       role: "Full Stack Web Intern",
-      description: "Formlabs Stuff"
+      description: "Implementing Formlabs.com new features and fixing bugs. GraphQL, React, and Python."
     },
     {
       image: "carriage.png",
       employer: "Cornell DTI",
       role: "Technical Product Manager",
-      description: "TPM Stuff"
+      description: "Lead team of devs creating 2 apps and a website. DynamoDB, Express, Flutter, React, TS."
     },
     {
       image: "carriage.png",
       employer: "Cornell DTI",
       role: "Flutter Developer",
-      description: "Flutter Stuff"
+      description: "Developed app to assist Cornell's CULift drivers with scheduling and navigation."
     },
     {
       image: "startuptree.png",
       employer: "StartupTree",
       role: "Full Stack Web Intern",
-      description: "StartupTree Stuff"
+      description: "Team Mentorship and Roadmap to Entrepreneurship features. Refactored Mentorship."
     }
   ]
 
