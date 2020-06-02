@@ -41,13 +41,13 @@ export default function Home() {
       </Head>
 
       <main>
-
         <CenterLeft>
           <Intro>Develop Better Software.</Intro>
         </CenterLeft>
 
         <CenterLeft>
           <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
+          <Button href="https://github.com/chansen424">Check Out My Projects</Button>
         </CenterLeft>
 
         <CardList cards={experience} />
