@@ -3,21 +3,27 @@ import UnderlinedLink from './underlinedLink'
 export default function Intro({ children }) {
   return (
     <>
-      <h1 className="intro">Hi, my name is</h1>
+      <div className="padded">
+        <h1 className="intro">Hi, my name is</h1>
 
-      <h2 className="full-name">Christopher Hansen.</h2>
+        <h2 className="full-name">Christopher Hansen.</h2>
 
-      <h3 className="tagline">{children}</h3>
+        <h3 className="tagline">{children}</h3>
 
-      <p className="description">
-        I'm a CS student at Cornell University. I'm the Technical Product Manager
+        <p className="description">
+          I'm a CS student at Cornell University. I'm the Technical Product Manager
         for <UnderlinedLink href="https://cornelldti.org">Cornell Design & Tech Initiative's</UnderlinedLink> campus-wide
         paratransit solution, Carriage.
         Currently interning at <UnderlinedLink href="https://formlabs.com">Formlabs</UnderlinedLink>.
-      </p>
+        </p>
+      </div>
 
       <style jsx>{
         `
+        .padded {
+          padding: 1rem;
+        }
+
         .intro {
           font-size: 1.5rem;
           color: #662E9B;
@@ -39,6 +45,12 @@ export default function Intro({ children }) {
         .description {
           line-height: 1.5;
           font-size: 1.25rem;
+        }
+
+        @media only screen and (min-width: 600px) {
+          .description {
+            width: 35rem;
+          }
         }
     `}
       </style>
