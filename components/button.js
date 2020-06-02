@@ -1,11 +1,11 @@
-export default function Button({ children, href }) {
+export default function Action({ children, href }) {
   return (
     <>
-      <a className="btn" href={href}>{children}</a>
+      <a className="action" href={href} target="_blank">{children}</a>
 
       <style jsx>{
         `
-        .btn {
+        .action {
           margin: 1rem 1rem;
           padding: 0.85em 1.15em;
           border-radius: 3px;
