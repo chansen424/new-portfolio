@@ -26,7 +26,7 @@ export default function Home() {
       description: "Developed app to assist Cornell's CULift drivers with scheduling and navigation."
     },
     {
-      image: "startuptree.png",
+      image: "StartupTree.png",
       employer: "StartupTree",
       role: "Full Stack Web Intern",
       description: "Team Mentorship and Roadmap to Entrepreneurship features. Refactored Mentorship."
