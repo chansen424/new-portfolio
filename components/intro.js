@@ -11,10 +11,8 @@ export default function Intro({ children }) {
         <h3 className="tagline">{children}</h3>
 
         <p className="description">
-          I'm a CS student at Cornell University. I'm the Technical Product Manager
-        for <UnderlinedLink href="https://cornelldti.org">Cornell Design & Tech Initiative's</UnderlinedLink> campus-wide
-        paratransit solution, Carriage.
-        Currently interning at <UnderlinedLink href="https://formlabs.com">Formlabs</UnderlinedLink>.
+          A CS student at Cornell University graduating in December 2021. I'm currently a Developer
+        Lead at <UnderlinedLink href="https://cornelldti.org">Cornell Design & Tech Initiative</UnderlinedLink>.
         </p>
       </div>
 

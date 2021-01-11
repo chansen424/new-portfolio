@@ -55,6 +55,9 @@ export default function Home() {
         <CenterLeft>
           <h2 className="section-header">Coursework</h2>
           <ul>
+            <li><UnderlinedLink>Operating Systems</UnderlinedLink> - CS 4410</li>
+            <li><UnderlinedLink>Programming Languages and Logics</UnderlinedLink> - CS 4110</li>
+            <li><UnderlinedLink>Natural Language Processing</UnderlinedLink> - CS 4740</li>
             <li><UnderlinedLink>Intro to Computer Vision</UnderlinedLink> - CS 4670</li>
             <li><UnderlinedLink>Systems Organization & Programming</UnderlinedLink> - CS 3410</li>
             <li><UnderlinedLink>Functional Programming</UnderlinedLink> - CS 3110</li>
