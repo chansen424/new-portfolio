@@ -34,7 +34,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="container">
+    <div key="main" className="container">
       <Head>
         <title>Chris Who Codes</title>
         <link rel="icon" href="/favicon.ico" />
