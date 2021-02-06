@@ -6,7 +6,7 @@ export default function Action({ children, href }) {
       <style jsx>{
         `
         .action {
-          margin: 1rem 1rem;
+          margin: 1rem 0.5rem;
           padding: 0.85em 1.15em;
           border-radius: 3px;
           background: #662E9B;
