@@ -8,6 +8,12 @@ import CenterLeft from '../components/centerLeft'
 export default function Home() {
   const experience = [
     {
+      image: "carriage.png",
+      employer: "Cornell DTI",
+      role: "Developer Lead",
+      description: ""
+    },
+    {
       image: "form3b.png",
       employer: "Formlabs",
       role: "Full Stack Web Intern",
@@ -42,7 +48,7 @@ export default function Home() {
 
       <main>
         <CenterLeft>
-          <Intro>Develop Better Software.</Intro>
+          <Intro>Software Engineer.</Intro>
         </CenterLeft>
 
         <CenterLeft>
@@ -51,20 +57,6 @@ export default function Home() {
         </CenterLeft>
 
         <CardList cards={experience} />
-
-        <CenterLeft>
-          <h2 className="section-header">Coursework</h2>
-          <ul>
-            <li><UnderlinedLink>Operating Systems</UnderlinedLink> - CS 4410</li>
-            <li><UnderlinedLink>Programming Languages and Logics</UnderlinedLink> - CS 4110</li>
-            <li><UnderlinedLink>Natural Language Processing</UnderlinedLink> - CS 4740</li>
-            <li><UnderlinedLink>Intro to Computer Vision</UnderlinedLink> - CS 4670</li>
-            <li><UnderlinedLink>Systems Organization & Programming</UnderlinedLink> - CS 3410</li>
-            <li><UnderlinedLink>Functional Programming</UnderlinedLink> - CS 3110</li>
-            <li><UnderlinedLink>Discrete Structures</UnderlinedLink> - CS 2800</li>
-            <li><UnderlinedLink>Object Oriented Programming</UnderlinedLink> - CS 2110</li>
-          </ul>
-        </CenterLeft>
       </main>
 
       <style jsx>{`
