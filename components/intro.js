@@ -12,7 +12,7 @@ export default function Intro({ children }) {
         <h3 className={styles.tagline}>{children}</h3>
 
         <p className={styles.description}>
-          A CS student at Cornell University graduating in December 2021. I'm currently a Developer
+          A CS student at Cornell University graduating in December 2021. I&apos;m currently a Developer
         Lead at <UnderlinedLink href="https://cornelldti.org">Cornell Design & Tech Initiative</UnderlinedLink>.
         </p>
       </div>
