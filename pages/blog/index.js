@@ -1,18 +1,18 @@
 import { getAllPosts } from '../../lib/api'
 import Link from 'next/link'
-import classnames from 'classnames'
 
 import styles from '../../styles/Blog.module.css'
+import classnames from 'classnames'
 
 export default function Blog({allPostsData}) {
     return (
         <div>
             <h1 style={{textAlign: "center", fontSize:"2.5rem"}}>Blog</h1>
-            <div style={{maxWidth: "900px", padding: "0 1rem"}}>
+            <div className={styles.listings}>
                 {allPostsData.map((post) => {
                     return (
                         <Link key={post.slug} href={`/blog/${encodeURIComponent(post.slug)}`}>
-                            <a className={styles.no_decoration}>
+                            <a className={classnames(styles.no_decoration, styles.listing)}>
                                 <div className={styles.card}>
                                     <h1 className={styles.primary}>{post.title}</h1>
                                     <h2 className={styles.secondary}>{post.date}</h2>

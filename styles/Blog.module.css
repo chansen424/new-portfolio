@@ -19,3 +19,15 @@
 .underlined {
     text-decoration: underline;
 }
+
+.listings {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 0 1rem; 
+    margin: auto;
+}
+
+.listing {
+    margin: 1rem 0;
+}
