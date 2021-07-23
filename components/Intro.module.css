@@ -1,0 +1,32 @@
+.padded {
+    padding: 1rem;
+  }
+
+  .intro {
+    font-size: 1.5rem;
+    color: #662E9B;
+  }
+
+  .full_name {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2.5rem;
+    color: grey;
+  }
+
+  .description {
+    line-height: 1.5;
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .description {
+      width: 35rem;
+    }
+  }

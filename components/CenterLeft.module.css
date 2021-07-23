@@ -1,0 +1,9 @@
+.center {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .left {
+    display: inline-block;
+    text-align: left;
+  }
