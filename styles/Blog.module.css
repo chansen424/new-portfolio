@@ -1,0 +1,21 @@
+.no_decoration {
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.primary {
+    color: #662E9B;
+}
+
+.secondary {
+    color: grey;
+}
+
+.underlined {
+    text-decoration: underline;
+}
