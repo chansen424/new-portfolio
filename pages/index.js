@@ -54,7 +54,7 @@ export default function Home() {
         <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
         <Button href="https://github.com/chansen424">My Projects</Button>
 
-        <Link href="/blog"><a style={{display: "block", margin: "3rem 1rem"}}>Check Out My Blog</a></Link>
+        <Link href="/blog"><a style={{display: "block", margin: "3rem 1rem", color: "#662E9B"}}>Check Out My Blog</a></Link>
       </div>
   
       <div className={classnames(styles.content, styles.centered)}>
