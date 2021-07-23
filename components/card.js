@@ -7,7 +7,9 @@ export default function Card({ image, employer, role, description }) {
       <div className={styles.wrapper}>
         <div className={styles.card}>
           <div className={styles.card__image}>
-            <Image src={image} alt={employer} layout="fill" />
+            <div className={styles.card__image_img}>
+            <Image src={image} alt={employer} width={300} height={300}/>
+            </div>
           </div>
           <div className={styles.card__employer}>{employer}</div>
           <div className={styles.card__role}>{role}</div>
