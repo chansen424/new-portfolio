@@ -11,7 +11,7 @@ export default function Blog({allPostsData}) {
             <div style={{maxWidth: "900px", padding: "0 1rem"}}>
                 {allPostsData.map((post) => {
                     return (
-                        <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
+                        <Link key={post.slug} href={`/blog/${encodeURIComponent(post.slug)}`}>
                             <a className={styles.no_decoration}>
                                 <div className={styles.card}>
                                     <h1 className={styles.primary}>{post.title}</h1>
