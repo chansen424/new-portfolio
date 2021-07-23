@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Intro from '../components/intro'
-import CardList from '../components/cardList'
-import Button from '../components/button'
-import UnderlinedLink from '../components/underlinedLink'
-import CenterLeft from '../components/centerLeft'
+import Intro from '../components/Intro'
+import CardList from '../components/CardList'
+import Button from '../components/Button'
+import UnderlinedLink from '../components/UnderlinedLink'
+import CenterLeft from '../components/CenterLeft'
 
 export default function Home() {
   const experience = [

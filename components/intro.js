@@ -1,4 +1,4 @@
-import UnderlinedLink from './underlinedLink'
+import UnderlinedLink from './UnderlinedLink'
 
 export default function Intro({ children }) {
   return (
