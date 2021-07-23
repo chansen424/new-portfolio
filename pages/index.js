@@ -58,7 +58,7 @@ export default function Home() {
         <CardList cards={experience} />
       </div>
 
-      <div className={classnames(styles.footer, styles.centered)}>Hello There</div>
+      <div className={classnames(styles.footer, styles.centered)}>Last Updated: July 22, 2021</div>
       </div>
   )
 }

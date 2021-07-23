@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  gap: 20px;
+  gap: 10px;
   grid-template-areas: 
   "header"
   "content"
