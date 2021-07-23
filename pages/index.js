@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import CardList from '../components/CardList'
 import Intro from '../components/Intro'
 import Button from '../components/Button'
@@ -51,7 +52,9 @@ export default function Home() {
         <Intro>Software Engineer.</Intro>
       
         <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
-        <Button href="https://github.com/chansen424">Check Out My Projects</Button>
+        <Button href="https://github.com/chansen424">My Projects</Button>
+
+        <Link href="/blog"><a style={{display: "block", margin: "3rem 1rem"}}>Check Out My Blog</a></Link>
       </div>
   
       <div className={classnames(styles.content, styles.centered)}>
