@@ -1,38 +1,39 @@
 import Head from 'next/head'
-import CenterLeft from '../components/CenterLeft'
 import CardList from '../components/CardList'
 import Intro from '../components/Intro'
 import Button from '../components/Button'
 import styles from '../styles/Home.module.css'
 
+import classnames from 'classnames';
+
 export default function Home() {
     const experience = [
       {
-        image: "carriage.png",
+        image: "/carriage.png",
         employer: "Cornell DTI",
         role: "Developer Lead",
         description: ""
       },
       {
-        image: "form3b.png",
+        image: "/form3b.png",
         employer: "Formlabs",
         role: "Full Stack Web Intern",
         description: "Implementing Formlabs.com new features and fixing bugs. GraphQL, React, and Python."
       },
       {
-        image: "carriage.png",
+        image: "/carriage.png",
         employer: "Cornell DTI",
         role: "Technical Product Manager",
         description: "Lead team of devs creating 2 apps and a website. DynamoDB, Express, Flutter, React, TS."
       },
       {
-        image: "carriage.png",
+        image: "/carriage.png",
         employer: "Cornell DTI",
         role: "Flutter Developer",
         description: "Developed app to assist Cornell's CULift drivers with scheduling and navigation."
       },
       {
-        image: "StartupTree.png",
+        image: "/StartupTree.png",
         employer: "StartupTree",
         role: "Full Stack Web Intern",
         description: "Team Mentorship and Roadmap to Entrepreneurship features. Refactored Mentorship."
@@ -46,18 +47,18 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
   
-        <main className={styles.main}>
-          <CenterLeft>
-            <Intro>Software Engineer.</Intro>
-          </CenterLeft>
+      <div className={classnames(styles.header, styles.centered)}>
+        <Intro>Software Engineer.</Intro>
+      
+        <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
+        <Button href="https://github.com/chansen424">Check Out My Projects</Button>
+      </div>
   
-          <CenterLeft>
-            <Button href="mailto:cph64@cornell.edu">Contact Me</Button>
-            <Button href="https://github.com/chansen424">Check Out My Projects</Button>
-          </CenterLeft>
-  
-          <CardList cards={experience} />
-        </main>
+      <div className={classnames(styles.content, styles.centered)}>
+        <CardList cards={experience} />
+      </div>
+
+      <div className={classnames(styles.footer, styles.centered)}>Hello There</div>
       </div>
   )
 }
