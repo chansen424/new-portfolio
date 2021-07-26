@@ -1,4 +1,4 @@
-import UnderlinedLink from './UnderlinedLink';
+import UnderlinedLink from "./UnderlinedLink";
 import styles from "./Intro.module.css";
 
 export default function Intro({ children }) {
@@ -12,10 +12,14 @@ export default function Intro({ children }) {
         <h3 className={styles.tagline}>{children}</h3>
 
         <p className={styles.description}>
-          A CS student at Cornell University graduating in December 2021. I&apos;m currently a Developer
-        Lead at <UnderlinedLink href="https://cornelldti.org">Cornell Design & Tech Initiative</UnderlinedLink>.
+          A CS student at Cornell University graduating in December 2021.
+          I&apos;m currently a Developer Lead at{" "}
+          <UnderlinedLink href="https://cornelldti.org">
+            Cornell Design & Tech Initiative
+          </UnderlinedLink>
+          .
         </p>
       </div>
     </>
-  )
+  );
 }

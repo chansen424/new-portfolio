@@ -1,10 +1,10 @@
 .container {
   display: grid;
   gap: 30px;
-  grid-template-areas: 
-  "header"
-  "content"
-  "footer";
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
 }
 
 .centered {

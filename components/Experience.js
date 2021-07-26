@@ -7,5 +7,5 @@ export default function Experience({ employer, role, description }) {
       <h3 className={styles.employer}>{employer}</h3>
       <p className={styles.description}>{description}</p>
     </div>
-  )
+  );
 }
