@@ -1,5 +1,5 @@
 .container {
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 18px;
   padding: 20px 20px;
   margin: 10px 0px;
@@ -10,21 +10,21 @@
   align-items: center;
 }
 
-.line {
-  width: 56px;
-  height: 2px;
-  border-radius: 18px;
-  background-color: #000;
-  margin: 20px 0;
-}
-
 .role {
   color: #662e9b;
   margin-left: 10px;
 }
 
 .employer {
-  color: #000;
+  color: #fff;
+  margin: 0;
+}
+
+.employerContainer {
+  padding: 5px 10px;
+  border-radius: 16px;
+  background-color: #662e9b;
+  width: fit-content;
 }
 
 .description {

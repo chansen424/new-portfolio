@@ -61,7 +61,11 @@ export default function Home() {
 
         <Link href="/blog">
           <a
-            style={{ display: "block", margin: "3rem 1rem 0rem", color: "#662E9B" }}
+            style={{
+              display: "block",
+              margin: "3rem 1rem 0rem",
+              color: "#662E9B",
+            }}
           >
             Check Out My Blog
           </a>
@@ -70,9 +74,9 @@ export default function Home() {
 
       <div className={classnames(styles.content, styles.centered)}>
         <h2>Experience</h2>
-        {
-          experience.map((item) => <Experience key={item.description} {...item} />)
-        }
+        {experience.map((item) => (
+          <Experience key={item.description} {...item} />
+        ))}
       </div>
 
       <div className={classnames(styles.footer, styles.centered)}>
