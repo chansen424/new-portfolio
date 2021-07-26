@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import CardList from "../components/CardList";
+import Experience from "../components/Experience";
 import Intro from "../components/Intro";
 import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
@@ -18,7 +19,7 @@ export default function Home() {
     {
       image: "/form3b.png",
       employer: "Formlabs",
-      role: "Full Stack Web Intern",
+      role: "Web Development Intern",
       description:
         "Implementing Formlabs.com new features and fixing bugs. GraphQL, React, and Python.",
     },
@@ -39,7 +40,7 @@ export default function Home() {
     {
       image: "/StartupTree.png",
       employer: "StartupTree",
-      role: "Full Stack Web Intern",
+      role: "Web Development Intern",
       description:
         "Team Mentorship and Roadmap to Entrepreneurship features. Refactored Mentorship.",
     },
@@ -60,7 +61,7 @@ export default function Home() {
 
         <Link href="/blog">
           <a
-            style={{ display: "block", margin: "3rem 1rem", color: "#662E9B" }}
+            style={{ display: "block", margin: "3rem 1rem 0rem", color: "#662E9B" }}
           >
             Check Out My Blog
           </a>
@@ -68,7 +69,10 @@ export default function Home() {
       </div>
 
       <div className={classnames(styles.content, styles.centered)}>
-        <CardList cards={experience} />
+        <h2>Experience</h2>
+        {
+          experience.map((item) => <Experience {...item} />)
+        }
       </div>
 
       <div className={classnames(styles.footer, styles.centered)}>
