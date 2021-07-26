@@ -8,6 +8,7 @@ export default function Blog({ allPostsData }) {
   return (
     <div>
       <h1 style={{ textAlign: "center", fontSize: "2.5rem" }}>Blog</h1>
+      <div className={styles.line}></div>
       <div className={styles.listings}>
         {allPostsData.map((post) => {
           return (
