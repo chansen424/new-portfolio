@@ -71,7 +71,7 @@ export default function Home() {
       <div className={classnames(styles.content, styles.centered)}>
         <h2>Experience</h2>
         {
-          experience.map((item) => <Experience {...item} />)
+          experience.map((item) => <Experience key={item.description} {...item} />)
         }
       </div>
 

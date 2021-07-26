@@ -10,10 +10,6 @@
   align-items: center;
 }
 
-.header > img {
-  margin-right: 10px;
-}
-
 .line {
   width: 56px;
   height: 2px;
@@ -24,6 +20,7 @@
 
 .role {
   color: #662e9b;
+  margin-left: 10px;
 }
 
 .employer {
