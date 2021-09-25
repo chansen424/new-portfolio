@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import CardList from "../components/CardList";
 import Experience from "../components/Experience";
 import Intro from "../components/Intro";
 import Button from "../components/Button";
