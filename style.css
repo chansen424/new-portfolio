@@ -52,6 +52,10 @@ h2 > span {
   font-weight: 300;
 }
 
+#fidelity {
+  grid-row: span 2; /* remove this if description is not as long as it is now */
+}
+
 section {
   padding-bottom: 1em;
 }
